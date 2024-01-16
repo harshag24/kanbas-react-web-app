@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>Harsh Agrawal</h1>
+    <form>
+        <label for="name">Name:*</label>
+        <input type="text" id="name" value="Harsh Agrawal">
+        
+        <label for="pronouns">Pronouns:</label>
+        <select id="pronouns">
+            <option>He/Him</option>
+        </select><br><br>
+
+        <label for="title">Title:</label>
+        <input type="text" id="title">
+        
+        <h2>Contact</h2>
+        <p>No registered services, you can add some on the <a href="#">settings page</a>.</p>
+
+        <h2>Biography</h2>
+        <p>Grad Student, Data Scientist, AI, Space, and Gaming enthusiast.</p>
+        <textarea id="biography" cols="75">Grad Student, Data Scientist, AI, Space, and Gaming enthusiast.</textarea>
+        
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://www.youtube.com/@harshagrawal8380/streams">YouTube <i class="fa fa-edit"></i> Links to an external site.</a> </li>
+        </ul>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th></th>
+                <th>URL</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="newLinkTitle" value="YouTube"></td>
+                <td><i class="fa fa-arrow-right"></i></td>
+                <td><input type="text" id="newLinkUrl" value="https://www.youtube.com/@harshagrawal8380/streams"></td>
+                <td><a href="#">Remove</a></td>
+            </tr>
+        </table>
+
+        <button>Add another link</button><br>
+        <button type="button">Cancel</button>   
+        <button type="button" onclick="location.href='/Kanbas/Account/Profile/screen.html'">Save Profile</button><br>
+        <button type="button">Edit Profile</button>   
+        <button type="button" onclick="location.href='/Kanbas/Account/Profile/screen.html'">Cancel Editing</button>
+    </form>
+</body>
+</html>
