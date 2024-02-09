@@ -49,7 +49,6 @@
 
 .input-container {
     position: relative;
-    display: inline-block;
 }
 
 .input-with-button {
@@ -59,7 +58,7 @@
 .input-button {
     position: absolute;
     right: 5px;
-    top: 50%;
+    top: 35%;
     transform: translateY(-50%);
 }
 
