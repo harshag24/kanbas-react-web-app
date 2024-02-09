@@ -1,41 +1,70 @@
 <!DOCTYPE html>
 <html>
 
-        <head>
-                <title>Edit Assignment Page</title>
-        </head>
+<head>
+        <title>Edit Assignment Page</title>
+        <link rel="stylesheet" href="/Kanbas/styles.css" />
+        <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Assignments/Edit/index.css" />
 
-        <body>
-                <table>
-                        <tbody>
-                                <tr>
-                                        <td valign="top">
-                                                <ul>
-                                                        <li><a
-                                                                        href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                                                        <li><a
-                                                                        href="#">Dashboard</a></li>
-                                                        <li><a
-                                                                        href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                                                        <li><a
-                                                                        href="#">Calendar</a></li>
-                                                        <li><a
-                                                                        href="#">Inbox</a></li>
-                                                        <li><a
-                                                                        href="#">History</a></li>
-                                                        <li><a
-                                                                        href="#">Studio</a></li>
-                                                        <li><a
-                                                                        href="#">Commons</a></li>
-                                                        <li><a
-                                                                        href="#">Help</a></li>
-                                                </ul>
-                                        </td>
 
-                                        <td valign="top">
-                                                <ul>
-                                                        <li><a
-                                                                        href="/Kanbas/Courses/Home/screen.html">
+</head>
+
+<body>
+        <div class="d-flex">
+                <div class="d-none d-md-block">
+                        <ul class="wd-kanbas-navigation">
+                                <li><a href="http://northeastern.edu">N</a></li>
+                                <li><a href="/Kanbas/Account/Navigation/index.html"><i
+                                                        class="fa fa-user"></i><br>Account</a></li>
+                                <li><a href="/Kanbas/Dashboard/screen.html"> <i class="fa fa-tachometer"></i>
+                                                Dashboard</a></li>
+                                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i
+                                                        class="fa fa-book"></i> Courses</a></li>
+                                <li><a href="/Kanbas/Calendar/index.html"> <i class="fa fa-calendar"></i>
+                                                Calendar</a></li>
+                                <li><a href="/Kanbas/Inbox/index.html"><i class="fa fa-inbox"></i> <br>
+                                                Inbox</a></li>
+                                <li><a href="/Kanbas/History/index.html"><i class="fa fa-history"></i>
+                                                <br> History</a></li>
+                                <li><a href="/Kanbas/Studio/index.html"><i class="fa fa-desktop"></i>
+                                                <br> Studio</a></li>
+                                <li><a href="/Kanbas/Help/index.html"><i class="fa fa-question-circle"></i><br>
+                                                Help</a>
+                                </li>
+                        </ul>
+                </div>
+
+
+
+                <div class="col-md-12">
+                        <div class="row">
+                                <div class="col-md-1">
+                                        <a href="/Kanbas/Navigation/index.html"><button class="red-icon"><i class="fa fa-ellipsis-v"></i></button></a> 
+                                </div>
+                                <div class="col-md-10">
+
+                                        <nav aria-label="breadcrumb">
+                                                <ol class="breadcrumb">
+                                                        <li class="breadcrumb-item">CS5610.11744.202310</li>
+                                                        <li class="breadcrumb-item"> Assignments</li>
+                                                        <li class="breadcrumb-item active" aria-current="page"> A1 - ENV
+                                                                + HTML</li>
+                                                </ol>
+                                        </nav>
+                                </div>
+
+                        </div>
+                        <hr>
+                        <div class="row">
+                                <div class="col-md-2">
+                                        <div class="d-none d-md-block">
+                                                <ul class="wd-navigation">
+                                                        <li>202310_Fall2023Semester</li>
+                                                        <li><a href="/Kanbas/Courses/Home/screen.html">
                                                                         Home</a></li>
                                                         <li><a href="#">
                                                                         Modules</a></li>
@@ -44,13 +73,12 @@
                                                         <li><a href="#">
                                                                         Zoom
                                                                         Meetings</a></li>
-                                                        <li><a
+                                                        <li class="wd-active"><a
                                                                         href="/Kanbas/Courses/Assignments/screen.html">
                                                                         Assignments</a></li>
                                                         <li><a href="#">
                                                                         Quizzes</a></li>
-                                                        <li><a
-                                                                        href="/Kanbas/Courses/Grades/screen.html">
+                                                        <li><a href="/Kanbas/Courses/Grades/screen.html">
                                                                         Grades</a></li>
                                                         <li><a href="#">
                                                                         People</a></li>
@@ -73,130 +101,131 @@
                                                                         Collaborations</a></li>
                                                         <li><a href="#">
                                                                         Syllabus</a></li>
-                                                        <li><a
-                                                                        href="/Kanbas/Courses/Settings/screen.html">
+                                                        <li><a href="/Kanbas/Courses/Settings/screen.html">
                                                                         Settings</a></li>
                                                 </ul>
-                                        </td>
+                                        </div>
+                                </div>
 
-                                        <td>
-                                                <select>
-                                                        <option>Speed
-                                                                Grader</option>
-                                                        <option>Edit</option>
-                                                        <option>Duplicate</option>
-                                                        <option>Delete</option>
-                                                        <option>Move
-                                                                To..</option>
-                                                        <option>Send
-                                                                To..</option>
-                                                        <option>Copy
-                                                                To..</option>
-                                                        <option>Share To
-                                                                Commons</option>
-                                                </select>
+                                <div class="col-md-9">
+                                        <form>
+                                                <div class="form-group float-end">
+                                                        <label class="published-text" for="published"><i
+                                                                        class="fa fa-check-circle"></i>Published</label>
+                                                        <button><i class="fa fa-ellipsis-v"></i></button>
+                                                </div>
+                                                <div class="clearfix">
+                                                </div>
                                                 <hr>
-                                                <form>
-                                                        <h2><label
-                                                                        for="assignmentName">Assignment
-                                                                        Name</label></h2>
-                                                        <input type="text"
-                                                                value="A1 - ENV + HTML"><br><br>
+                                                <div class="form-group">
+                                                        <label for="assignmentName">Assignment Name</label>
+                                                        <input type="text" class="form-control" id="assignmentName"
+                                                                value="A1 - ENV + HTML">
+                                                </div>
 
-                                                        <textarea>This is the
-                                                                assignment
-                                                                description.</textarea><br>
+                                                <div class="form-group">
+                                                        <textarea class="form-control"
+                                                                id="assignmentDescription">This is the assignment description.</textarea>
+                                                </div>
 
-                                                        <label
-                                                                for="points">Points</label><br>
-                                                        <input type="number"
-                                                                id="points"
-                                                                value="100"><br><br>
+                                                <div class="form-group row">
+                                                        <label for="points"
+                                                                class="col-sm-1 col-form-label">Points</label>
+                                                        <div class="col-sm-10">
+                                                                <input type="number" class="form-control" id="points"
+                                                                        value="100">
+                                                        </div>
+                                                </div>
 
-                                                        <label
-                                                                for="assignmentGroup">Assignment
-                                                                Group</label><br>
-                                                        <select
-                                                                id="assignmentGroup">
-                                                                <option>ASSIGNMENTS</option>
-                                                        </select><br><br>
+                                                <div class="form-group row">
+                                                        <label for="assignmentGroup"
+                                                                class="col-sm-1 col-form-label">Assignment
+                                                                Group</label>
+                                                        <div class="col-sm-10">
+                                                                <select class="form-select" id="assignmentGroup">
+                                                                        <option>ASSIGNMENTS</option>
+                                                                </select>
+                                                        </div>
+                                                </div>
 
-                                                        <label
-                                                                for="displayGrade">Display
-                                                                Grade
-                                                                as</label><br>
-                                                        <select
-                                                                id="displayGrade">
-                                                                <option>Percentage</option>
-                                                        </select><br><br>
+                                                <div class="form-group row">
+                                                        <label for="displayGrade"
+                                                                class="col-sm-1 col-form-label">Display Grade
+                                                                as</label>
+                                                        <div class="col-sm-10">
+                                                                <select class="form-select" id="displayGrade">
+                                                                        <option>Percentage</option>
+                                                                </select>
+                                                        </div>
+                                                </div>
 
-                                                        <label
-                                                                for="submissionType">Submission
-                                                                Type</label><br>
-                                                        <select
-                                                                id="submissionType">
-                                                                <option>Online</option>
-                                                        </select><br><br>
+                                                <div class="form-group row">
+                                                        <label class="col-sm-1 col-form-label">
+                                                        </label>
+                                                        <div class="col-sm-10">
+                                                                <input type="checkbox"> Do not count this assignment
+                                                                towards final grade
+                                                        </div>
+                                                </div>
 
-                                                        <label
-                                                                for="onlineOptions">Online
-                                                                Entry
-                                                                Options</label><br>
-                                                        <label><input
-                                                                        type="checkbox">
-                                                                Text
-                                                                Entry</label><br>
-                                                        <label><input
-                                                                        type="checkbox">
-                                                                Website
-                                                                URL</label><br>
-                                                        <label><input
-                                                                        type="checkbox">
-                                                                Media
-                                                                Recordings</label><br>
-                                                        <label><input
-                                                                        type="checkbox">
-                                                                Student
-                                                                Annotation</label><br>
-                                                        <label><input
-                                                                        type="checkbox">
-                                                                File
-                                                                Uploads</label><br><br>
 
-                                                        <label
-                                                                for="assignTo">Assign
-                                                                to</label><br>
-                                                        <input type="text"
-                                                                id="assignTo"
-                                                                value="Everyone"><br><br>
+                                                <div class="form-group row">
+                                                        <div class="row mb-3">
+                                                                <label class="col-sm-1 col-form-label">Assign</label>
+                                                                <div class="col-sm-10 assign-form">
+                                                                        <div class="mb-3">
+                                                                                <label for="assignTo"
+                                                                                        class="form-label">Assign
+                                                                                        to</label>
+                                                                                <input type="text" class="form-control"
+                                                                                        id="assignTo" value="Everyone">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                                <label for="dueDate"
+                                                                                        class="form-label">Due</label>
+                                                                                <input type="date" class="form-control"
+                                                                                        id="dueDate" value="2024-01-01">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                                <label for="availableFrom"
+                                                                                        class="form-label">Available
+                                                                                        from</label>
+                                                                                <input type="date" class="form-control"
+                                                                                        id="availableFrom"
+                                                                                        value="2024-01-01">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                                <label for="untilDate"
+                                                                                        class="form-label">Until</label>
+                                                                                <input type="date" class="form-control"
+                                                                                        id="untilDate"
+                                                                                        value="2024-01-01">
+                                                                        </div>
+                                                                        <div class="mb-3">
+                                                                                <button type="button"
+                                                                                        class="form-control"><i
+                                                                                                class="fa fa-plus"></i>
+                                                                                        Add</button>
+                                                                        </div>
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                                <hr>
 
-                                                        <label
-                                                                for="dueDate">Due</label><br>
-                                                        <input type="date"
-                                                                id="dueDate"
-                                                                value="2024-01-01"><br><br>
-
-                                                        <label
-                                                                for="availableFrom">Available
-                                                                from</label><br>
-                                                        <input type="date"
-                                                                id="availableFrom"
-                                                                value="2024-01-01"><br><br>
-
-                                                        <label
-                                                                for="untilDate">Until</label><br>
-                                                        <input type="date"
-                                                                id="untilDate"
-                                                                value="2024-01-01"><br><br>
-
-                                                        <button type="button"
+                                                <div class="form-group float-end">
+                                                        <button type="button" class="btn btn-secondary"
                                                                 onclick="location.href='/Kanbas/Courses/Assignments/screen.html'">Cancel</button>
-                                                        <button type="button"
+                                                        <button type="button" class="btn btn-success"
                                                                 onclick="location.href='/Kanbas/Courses/Assignments/screen.html'">Save</button>
-                                                </form>
-                                        </td>
-                                </tr>
-                        </tbody>
-                </table>
+                                                </div>
+                                                <div class="clearfix">
+                                                </div>
+                                                <hr>
+                                        </form>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</body>
 
-        </html>
+</html>

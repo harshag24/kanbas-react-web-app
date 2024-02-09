@@ -1,0 +1,76 @@
+.wd-modules,
+.wd-modules * {
+  border-radius: 0%; 
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wd-modules {
+  margin-left: 1%;
+}
+
+.wd-modules > li {
+  border: 1px solid black;
+  margin-top: 1%;
+}
+
+.wd-modules > li > div {
+  border-left: 4px solid #007bff; 
+  font-weight: bold; 
+}
+
+.wd-modules > li > ul > li {
+  padding: 0px;
+  border-left: 4px solid green; 
+  border-top: 1px black solid;
+}
+
+.wd-modules > li > ul > li >ul >li {
+  padding: 1px;
+  font-size: 14px;
+
+}
+.wd-modules > li > ul > li > ul > li > span {
+  margin-left: 45px; 
+}
+
+.wd-modules > li > ul > li, .wd-modules > li > ul > li > ul > li {
+  border-top: 1px rgb(173, 173, 173) solid;
+}
+
+.fa-check-circle {
+  color: green;
+}
+
+.fa-plus, .fa-ellipsis-v {
+  color: black;
+  margin-right: 8px;
+  margin-left: 1px;
+}
+
+.icon-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; 
+  
+}
+button {
+  border: 1px solid black;
+  margin-right: 2px; 
+  border-radius: 2px; 
+  height: 30px;
+  
+}
+
+select {
+  border: none;
+  border-radius: 2px;
+  height: 30px;
+}

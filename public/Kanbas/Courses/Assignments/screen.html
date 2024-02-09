@@ -1,41 +1,68 @@
 <!DOCTYPE html>
 <html>
 
-        <head>
-                <title>Course Assignment Home</title>
-        </head>
+<head>
+        <title>Course Assignment Home</title>
+        <link rel="stylesheet" href="/Kanbas/styles.css" />
+        <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Assignments/index.css" />
+        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
 
-        <body>
-                <table>
-                        <tbody>
-                                <tr>
-                                        <td valign="top">
-                                                <ul>
-                                                        <li><a
-                                                                        href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                                                        <li><a
-                                                                        href="#">Dashboard</a></li>
-                                                        <li><a
-                                                                        href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                                                        <li><a
-                                                                        href="#">Calendar</a></li>
-                                                        <li><a
-                                                                        href="#">Inbox</a></li>
-                                                        <li><a
-                                                                        href="#">History</a></li>
-                                                        <li><a
-                                                                        href="#">Studio</a></li>
-                                                        <li><a
-                                                                        href="#">Commons</a></li>
-                                                        <li><a
-                                                                        href="#">Help</a></li>
-                                                </ul>
-                                        </td>
+</head>
 
-                                        <td valign="top">
-                                                <ul>
-                                                        <li><a
-                                                                        href="/Kanbas/Courses/Home/screen.html">
+<body>
+        <div class="d-flex">
+                <div class="d-none d-md-block">
+                        <ul class="wd-kanbas-navigation">
+                                <li><a href="http://northeastern.edu">N</a></li>
+                                <li><a href="/Kanbas/Account/Navigation/index.html"><i
+                                                        class="fa fa-user"></i><br>Account</a></li>
+                                <li><a href="/Kanbas/Dashboard/screen.html"> <i class="fa fa-tachometer"></i>
+                                                Dashboard</a></li>
+                                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i
+                                                        class="fa fa-book"></i> Courses</a></li>
+                                <li><a href="/Kanbas/Calendar/index.html"> <i class="fa fa-calendar"></i> Calendar</a>
+                                </li>
+                                <li><a href="/Kanbas/Inbox/index.html"><i class="fa fa-inbox"></i> <br>
+                                                Inbox</a></li>
+                                <li><a href="/Kanbas/History/index.html"><i class="fa fa-history"></i>
+                                                <br> History</a></li>
+                                <li><a href="/Kanbas/Studio/index.html"><i class="fa fa-desktop"></i>
+                                                <br> Studio</a></li>
+                                <li><a href="/Kanbas/Help/index.html"><i class="fa fa-question-circle"></i><br> Help</a>
+                                </li>
+                        </ul>
+                </div>
+
+                <div class="col-md-12">
+                        <div class="row">
+                                <div class="col-md-2">
+                                        <a href="/Kanbas/Navigation/index.html"><button class="red-icon"><i class="fa fa-ellipsis-v"></i></button></a> 
+                                </div>
+                                <div class="col-md-8">
+                                        <nav aria-label="breadcrumb">
+                                                <ol class="breadcrumb">
+                                                        <li class="breadcrumb-item">CS5610</li>
+                                                        <li class="breadcrumb-item">11744</li>
+                                                        <li class="breadcrumb-item">202310</li>
+                                                        <li class="breadcrumb-item active" aria-current="page"> Assignments</li>
+                                                </ol>
+                                        </nav>
+                                </div>
+                                <div class="col-md-2">
+                                        <button class="float-end"><i class="fa fa-user"></i> Student View</button>
+
+                                </div>
+                                <hr>
+                        </div>
+                        <div class="row ">
+                                <div class="col-md-2">
+                                        <div class="d-none d-md-block">
+                                                <ul class="wd-navigation">
+                                                        <li>202310_Fall2023Semester</li>
+                                                        <li><a href="/Kanbas/Courses/Home/screen.html">
                                                                         Home</a></li>
                                                         <li><a href="#">
                                                                         Modules</a></li>
@@ -44,13 +71,12 @@
                                                         <li><a href="#">
                                                                         Zoom
                                                                         Meetings</a></li>
-                                                        <li><a
+                                                        <li class="wd-active"><a
                                                                         href="/Kanbas/Courses/Assignments/screen.html">
                                                                         Assignments</a></li>
                                                         <li><a href="#">
                                                                         Quizzes</a></li>
-                                                        <li><a
-                                                                        href="/Kanbas/Courses/Grades/screen.html">
+                                                        <li><a href="/Kanbas/Courses/Grades/screen.html">
                                                                         Grades</a></li>
                                                         <li><a href="#">
                                                                         People</a></li>
@@ -73,214 +99,257 @@
                                                                         Collaborations</a></li>
                                                         <li><a href="#">
                                                                         Syllabus</a></li>
-                                                        <li><a
-                                                                        href="/Kanbas/Courses/Settings/screen.html">
+                                                        <li><a href="/Kanbas/Courses/Settings/screen.html">
                                                                         Settings</a></li>
                                                 </ul>
-                                        </td>
+                                        </div>
+                                </div>
 
-                                        <td valign="top">
-                                                <input type="text"
+                                <div class="col-md-10">
+                                        <div class="assignment-section">
+                                                <div class="float-end-buttons">
+                                                        <button class="btn"><i class="fa fa-plus"></i> Group</button>
+                                                        <button class="btn"><i class="fa fa-plus"></i>
+                                                                Assignment</button>
+                                                        <button class="btn"><i class="fa fa-ellipsis-v"></i></button>
+
+                                                </div>
+                                                <input type="text" class="form-control search-assignments"
                                                         placeholder="Search for Assignments">
-                                                <button>Group</button>
-                                                <button>Assignment</button>
-                                                <select>
-                                                        <option>Edit Assignment
-                                                                Dates</option>
-                                                </select>
+
                                                 <hr>
-                                                <h2>ASSIGNMENTS 40% of Total
-                                                        <select>
-                                                                <option>Edit</option>
-                                                                <option>Speed
-                                                                        Grader</option>
-                                                                <option>Duplicate</option>
-                                                                <option>Delete</option>
-                                                                <option>Move
-                                                                        To..</option>
-                                                                <option>Send
-                                                                        To..</option>
-                                                                <option>Copy
-                                                                        To..</option>
-                                                                <option>Share To
-                                                                        Commons</option>
-                                                        </select>
-                                                </h2>
-                                                <ul>
-                                                        <li><a
-                                                                        href="Edit/screen.html">A1
-                                                                        - ENV +
-                                                                        HTML</a><br><a
-                                                                        href="#">Multiple
-                                                                        Modules
-                                                                </a>| Not
-                                                                available
-                                                                yet</li>
-                                                        <li><a
-                                                                        href="Edit/screen.html">A2
-                                                                        - CSS +
-                                                                        BOOTSTRAP</a><br><a
-                                                                        href="#">Multiple
-                                                                        Modules
-                                                                </a>| Not
-                                                                available
-                                                                yet</li>
-                                                        <li><a
-                                                                        href="Edit/screen.html">A3
-                                                                        - JS +
-                                                                        REACT</a><br><a
-                                                                        href="#">Multiple
-                                                                        Modules
-                                                                </a>| Not
-                                                                available
-                                                                yet</li>
-                                                        <li><a
-                                                                        href="Edit/screen.html">A4
-                                                                        - STATE
-                                                                        +
-                                                                        REDUX</a><br><a
-                                                                        href="#">Multiple
-                                                                        Modules
-                                                                </a>| Not
-                                                                available
-                                                                yet</li>
-                                                        <li><a
-                                                                        href="Edit/screen.html">A5
-                                                                        - NODE +
-                                                                        SESSION</a><br><a
-                                                                        href="#">Multiple
-                                                                        Modules
-                                                                </a>| Not
-                                                                available
-                                                                yet</li>
-                                                        <li><a
-                                                                        href="Edit/screen.html">A6
-                                                                        - MONGO
-                                                                        +
-                                                                        MONGOOSE</a><br><a
-                                                                        href="#">Multiple
-                                                                        Modules
-                                                                </a>| Not
-                                                                available
-                                                                yet</li>
-                                                </ul>
 
-                                                <h2>QUIZZES 10% of Total
-                                                        <select>
-                                                                <option>Edit</option>
-                                                                <option>Speed
-                                                                        Grader</option>
-                                                                <option>Duplicate</option>
-                                                                <option>Delete</option>
-                                                                <option>Move
-                                                                        To..</option>
-                                                                <option>Send
-                                                                        To..</option>
-                                                                <option>Copy
-                                                                        To..</option>
-                                                                <option>Share To
-                                                                        Commons</option>
-                                                        </select></h2>
-                                                <ul>
-                                                        <li><a href="#">Q1 -
-                                                                        HTML</a><br><a
-                                                                        href="#">Multiple
-                                                                        Modules
-                                                                </a>| Not
-                                                                available
-                                                                yet</li>
-                                                        <li><a href="#">Q2 -
-                                                                        CSS</a><br><a
-                                                                        href="#">Multiple
-                                                                        Modules
-                                                                </a>| Not
-                                                                available
-                                                                yet</li>
-                                                        <li><a href="#">Q3 -
-                                                                        JS_ES6</a><br><a
-                                                                        href="#">Multiple
-                                                                        Modules
-                                                                </a>| Not
-                                                                available
-                                                                yet</li>
-                                                        <li><a href="#">Q4 -
-                                                                        NODE</a><br><a
-                                                                        href="#">Multiple
-                                                                        Modules
-                                                                </a>| Not
-                                                                available
-                                                                yet</li>
-                                                        <li><a href="#">Q5 -
-                                                                        MONGO</a><br><a
-                                                                        href="#">Multiple
-                                                                        Modules
-                                                                </a>| Not
-                                                                available
-                                                                yet</li>
-                                                </ul>
 
-                                                <h2>EXAMS 20% of Total <select>
-                                                                <option>Edit</option>
-                                                                <option>Speed
-                                                                        Grader</option>
-                                                                <option>Duplicate</option>
-                                                                <option>Delete</option>
-                                                                <option>Move
-                                                                        To..</option>
-                                                                <option>Send
-                                                                        To..</option>
-                                                                <option>Copy
-                                                                        To..</option>
-                                                                <option>Share To
-                                                                        Commons</option>
-                                                        </select></h2>
-                                                <ul>
-                                                        <li><a
-                                                                        href="#">Midterm</a><br><a
-                                                                        href="#">Multiple
-                                                                        Modules
-                                                                </a>| Not
-                                                                available
-                                                                yet</li>
-                                                        <li><a
-                                                                        href="#">Final</a><br><a
-                                                                        href="#">Multiple
-                                                                        Modules
-                                                                </a>| Not
-                                                                available
-                                                                yet</li>
-                                                </ul>
+                                                <h3 class="assignment-header">
+                                                        Assignments
+                                                        <span class="percentage-text">40% Of Total</span>
+                                                        <button class="btn"><i class="fa fa-plus"></i></button>
+                                                        <button class="btn"><i class="fa fa-ellipsis-v"></i></button>
+                                                </h3>
 
-                                                <h2>PROJECTS 30% of Total
-                                                        <select>
-                                                                <option>Edit</option>
-                                                                <option>Speed
-                                                                        Grader</option>
-                                                                <option>Duplicate</option>
-                                                                <option>Delete</option>
-                                                                <option>Move
-                                                                        To..</option>
-                                                                <option>Send
-                                                                        To..</option>
-                                                                <option>Copy
-                                                                        To..</option>
-                                                                <option>Share To
-                                                                        Commons</option>
-                                                        </select>
-                                                </h2>
-                                                <ul>
-                                                        <li><a
-                                                                        href="#">Project</a><br><a
-                                                                        href="#">Multiple
-                                                                        Modules
-                                                                </a>| Not
-                                                                available
-                                                                yet</li>
-                                                </ul>
-                                        </td>
-                                </tr>
-                        </tbody>
-                </table>
-        </body>
+
+                                                <div class="sections">
+                                                        <ul class="list-group">
+                                                                <li class="list-group-item">
+                                                                        <div class="float-end-buttons">
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-check-circle"></i>
+                                                                                </button>
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-ellipsis-v"></i></button>
+
+                                                                        </div>
+
+                                                                        <a href="Edit/screen.html">
+                                                                                <i class="fa fa-book"
+                                                                                        style="color: green;"></i>
+                                                                                A1 - ENV + HTML
+                                                                        </a>
+                                                                        <br>
+
+                                                                        <a href="#">Multiple
+                                                                                Modules
+                                                                        </a>| Not
+                                                                        available
+                                                                        yet
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                        <div class="float-end-buttons">
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-check-circle"></i>
+                                                                                </button>
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-ellipsis-v"></i></button>
+
+                                                                        </div>
+                                                                        <a href="Edit/screen.html"><i class="fa fa-book"
+                                                                                        style="color: green;"></i>A2
+                                                                                - CSS +
+                                                                                BOOTSTRAP</a><br><a href="#">Multiple
+                                                                                Modules
+                                                                        </a>| Not
+                                                                        available
+                                                                        yet
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                        <div class="float-end-buttons">
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-check-circle"></i>
+                                                                                </button>
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-ellipsis-v"></i></button>
+
+                                                                        </div>
+                                                                        <a href="Edit/screen.html"><i class="fa fa-book"
+                                                                                        style="color: green;"></i>A3
+                                                                                - JS +
+                                                                                REACT</a><br><a href="#">Multiple
+                                                                                Modules
+                                                                        </a>| Not
+                                                                        available
+                                                                        yet
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                        <div class="float-end-buttons">
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-check-circle"></i>
+                                                                                </button>
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-ellipsis-v"></i></button>
+
+                                                                        </div>
+                                                                        <a href="Edit/screen.html"><i class="fa fa-book"
+                                                                                        style="color: green;"></i>A4
+                                                                                - STATE
+                                                                                +
+                                                                                REDUX</a><br><a href="#">Multiple
+                                                                                Modules
+                                                                        </a>| Not
+                                                                        available
+                                                                        yet
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                        <div class="float-end-buttons">
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-check-circle"></i>
+                                                                                </button>
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-ellipsis-v"></i></button>
+
+                                                                        </div>
+                                                                        <a href="Edit/screen.html"><i class="fa fa-book"
+                                                                                        style="color: green;"></i>A5
+                                                                                - NODE +
+                                                                                SESSION</a><br><a href="#">Multiple
+                                                                                Modules
+                                                                        </a>| Not
+                                                                        available
+                                                                        yet
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                        <div class="float-end-buttons">
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-check-circle"></i>
+                                                                                </button>
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-ellipsis-v"></i></button>
+
+                                                                        </div>
+                                                                        <a href="Edit/screen.html"><i class="fa fa-book"
+                                                                                        style="color: green;"></i>A6
+                                                                                - MONGO
+                                                                                +
+                                                                                MONGOOSE</a><br><a href="#">Multiple
+                                                                                Modules
+                                                                        </a>| Not
+                                                                        available
+                                                                        yet
+                                                                </li>
+                                                        </ul>
+                                                </div>
+
+
+                                                <h3 class="assignment-header">
+                                                        Quizzes
+                                                        <span class="percentage-text">10% Of Total</span>
+                                                        <button class="btn"><i class="fa fa-plus"></i></button>
+                                                        <button class="btn"><i class="fa fa-ellipsis-v"></i></button>
+                                                </h3>
+                                                <div class="sections">
+
+                                                        <ul class="list-group">
+                                                                <li class="list-group-item">
+                                                                        <div class="float-end-buttons">
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-check-circle"></i>
+                                                                                </button>
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-ellipsis-v"></i></button>
+
+                                                                        </div>
+                                                                        <a href="#"><i class="fa fa-book"
+                                                                                        style="color: green;"></i>Q1 -
+                                                                                HTML</a><br><a href="#">Multiple
+                                                                                Modules
+                                                                        </a>| Not
+                                                                        available
+                                                                        yet
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                        <div class="float-end-buttons">
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-check-circle"></i>
+                                                                                </button>
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-ellipsis-v"></i></button>
+
+                                                                        </div><a href="#"><i class="fa fa-book"
+                                                                                        style="color: green;"></i>Q2 -
+                                                                                CSS</a><br><a href="#">Multiple
+                                                                                Modules
+                                                                        </a>| Not
+                                                                        available
+                                                                        yet
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                        <div class="float-end-buttons">
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-check-circle"></i>
+                                                                                </button>
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-ellipsis-v"></i></button>
+
+                                                                        </div>
+                                                                        <a href="#"><i class="fa fa-book"
+                                                                                        style="color: green;"></i>Q3 -
+                                                                                JS_ES6</a><br><a href="#">Multiple
+                                                                                Modules
+                                                                        </a>| Not
+                                                                        available
+                                                                        yet
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                        <div class="float-end-buttons">
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-check-circle"></i>
+                                                                                </button>
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-ellipsis-v"></i></button>
+
+                                                                        </div>
+                                                                        <a href="#"><i class="fa fa-book"
+                                                                                        style="color: green;"></i>Q4 -
+                                                                                NODE</a><br><a href="#">Multiple
+                                                                                Modules
+                                                                        </a>| Not
+                                                                        available
+                                                                        yet
+                                                                </li>
+                                                                <li class="list-group-item">
+                                                                        <div class="float-end-buttons">
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-check-circle"></i>
+                                                                                </button>
+                                                                                <button class="btn"><i
+                                                                                                class="fa fa-ellipsis-v"></i></button>
+
+                                                                        </div>
+                                                                        <a href="#"><i class="fa fa-book"
+                                                                                        style="color: green;"></i>Q5 -
+                                                                                MONGO</a><br><a href="#">Multiple
+                                                                                Modules
+                                                                        </a>| Not
+                                                                        available
+                                                                        yet
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+</body>
 
 </html>

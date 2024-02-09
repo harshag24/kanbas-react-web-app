@@ -1,0 +1,48 @@
+
+.course-status-section button {
+    border: none;
+}
+
+.unpublished {
+    background-color: gray;
+}
+.published {
+    background-color: rgb(97, 196, 97);
+    color: white;
+}
+
+.course-status-section ul {
+    list-style-type: none ; 
+    padding-left: 0;
+    margin: 10px 0;
+}
+
+.course-status-section ul li button {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    border: 1px black solid;
+    border-radius: 2px;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.list-group-item {
+    border: 1px black;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: " . " !important;
+}
+
+.breadcrumb-item {
+    color: red !important; 
+}
+
+.breadcrumb-item.active {
+    color: black;
+}
+.breadcrumb-item.active::before {
+    content: " > " !important;
+    color: black;
+}

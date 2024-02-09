@@ -1,0 +1,65 @@
+.breadcrumb-item + .breadcrumb-item::before {
+    content: " . " !important;
+}
+
+.breadcrumb-item {
+    color: red !important; 
+}
+
+.breadcrumb-item.active {
+    color: black;
+}
+.breadcrumb-item.active::before {
+    content: " > " !important;
+    color: black;
+}
+.red-icon {
+    color: red;    
+    border: none;
+  }
+
+.table-responsive > .table {
+    border: 1px solid black;
+    text-align: center;
+}
+.table-responsive{
+    margin-top: 1%;
+}
+
+.table-responsive > .table > tbody > tr > .student-name {
+    color: red;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon .icon {
+    position: absolute;
+    left: 3%;
+    top: 60%;
+    z-index: 10;
+    color: #ccc;
+}
+
+.input-icon input {
+    padding-left: 5%;
+}
+
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.input-with-button {
+    padding-right: 30px;
+}
+
+.input-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+

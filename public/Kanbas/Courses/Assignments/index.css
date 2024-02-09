@@ -1,0 +1,70 @@
+.float-end-buttons {
+    float: right;
+}
+
+.search-assignments {
+    width: 10%; 
+    border-radius: 0.25rem; 
+}
+
+.fa-check-circle {
+    color: green;
+}
+
+.list-group-item {
+    border-radius: 0 !important;
+}
+
+.sections {
+    border-left: 4px green solid;
+}
+
+.fa-plus, .fa-check, .fa-ellipsis-h {
+    margin-right: 5px;
+}
+
+.assignment-header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+}
+
+.percentage-text {
+    margin-left: auto; 
+    border: 1px solid #000;
+    border-radius: 10px; 
+    padding: 0.25em 0.6em; 
+    font-size: 0.75em; 
+}
+
+.btn {
+    margin-left: 0.5em;
+}
+
+.group-assignment-btn, .edit-dropdown, .assignment-section {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: " . " !important;
+}
+
+.breadcrumb-item {
+    color: red !important; 
+}
+
+.breadcrumb-item.active {
+    color: black;
+}
+.breadcrumb-item.active::before {
+    content: " > " !important;
+    color: black;
+}
+.red-icon {
+    color: red;
+    border: none;
+  }
+
+

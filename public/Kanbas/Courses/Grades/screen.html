@@ -1,152 +1,217 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
         <title>Course Grades Home</title>
-    </head>
-    <body>
-        <table>
-            <tbody>
-                <tr>
-                    <td valign="top">
-                        <ul>
-                            <li><a
-                                    href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                            <li><a href="#">Dashboard</a></li>
-                            <li><a
-                                    href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li><a href="#">Inbox</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Studio</a></li>
-                            <li><a href="#">Commons</a></li>
-                            <li><a href="#">Help</a></li>
-                        </ul>
-                    </td>
+        <link rel="stylesheet" href="/Kanbas/styles.css" />
+        <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+        <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Grades/index.css" />
+        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
 
-                    <td valign="top">
-                        <ul>
-                            <li><a href="/Kanbas/Courses/Home/screen.html">
-                                    Home</a></li>
-                            <li><a href="#">
-                                    Modules</a></li>
-                            <li><a href="#">
-                                    Piazza</a></li>
-                            <li><a href="#">
-                                    Zoom Meetings</a></li>
-                            <li><a
-                                    href="/Kanbas/Courses/Assignments/screen.html">
-                                    Assignments</a></li>
-                            <li><a href="#">
-                                    Quizzes</a></li>
-                            <li><a href="/Kanbas/Courses/Grades/screen.html">
-                                    Grades</a></li>
-                            <li><a href="#">
-                                    People</a></li>
-                            <li><a href="#">
-                                    Panopto Video</a></li>
-                            <li><a href="#">
-                                    Discussions</a></li>
-                            <li><a href="#">
-                                    Announcements</a></li>
-                            <li><a href="#">
-                                    Pages</a></li>
-                            <li><a href="#">
-                                    Files</a></li>
-                            <li><a href="#">
-                                    Rubrics</a></li>
-                            <li><a href="#">
-                                    Outcomes</a></li>
-                            <li><a href="#">
-                                    Collaborations</a></li>
-                            <li><a href="#">
-                                    Syllabus</a></li>
-                            <li><a href="/Kanbas/Courses/Settings/screen.html">
-                                    Settings</a></li>
-                        </ul>
-                    </td>
+</head>
 
-                    <td valign="top">
-                        <form>
-                            <select><option
-                                    value="Gradebook">Gradebook</option></select>
-                            <button>Import</button>
-                            <select><option
-                                    value="Export">Export</option></select>
-                            <button>Configure</button><br />
-                            <h2><label for="text-fields-name">Student
-                                    Name:</label></h2>
-                            <input id="text-fields-name"
-                                placeholder="Search Students" /><br />
-                            <h2><label for="text-fields-assign-names">Assignment
-                                    Names:</label></h2>
-                            <input id="text-fields-assign-names"
-                                placeholder="Search Assignments" /><br /><br />
-                            <button>Apply Filters</button>
-                        </form> <br />
-                        <table border="2">
-                            <thead>
-                                <tr>
-                                    <th>Student Name</th>
-                                    <th>A1 SETUP<br>Out of 100</th>
-                                    <th>A2 HTML<br>Out of 100</th>
-                                    <th>A3 CSS<br>Out of 100</th>
-                                    <th>A4 BOOTSTRAP<br>Out of 100</th>
-                                    <th>A5 JAVASCRIPT<br>Out of 100</th>
-                                    <th>A6 REACT<br>Out of 100</th>
-                                    <th>A7 REDUX<br>Out of 100</th>
-                                    <th>A8 NODE<br>Out of 100</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr align="center">
-                                    <td>Alice Wonderland</td>
-                                    <td>98</td>
-                                    <td><input type="number" value=89 /></td>
-                                    <td>87</td>
-                                    <td>90</td>
-                                    <td>89</td>
-                                    <td>94</td>
-                                    <td>88</td>
-                                    <td><input type="number" value=100 /></td>
-                                </tr>
-                                <tr align="center">
-                                    <td>Princess Leia</td>
-                                    <td>98</td>
-                                    <td>80</td>
-                                    <td>87</td>
-                                    <td><input type="number" value=82 /></td>
-                                    <td>100</td>
-                                    <td>94</td>
-                                    <td>85</td>
-                                    <td><input type="number" value=84 /></td>
-                                </tr>
-                                <tr align="center">
-                                    <td>Luke Skywalker</td>
-                                    <td>99</td>
-                                    <td>98</td>
-                                    <td><input type="number" value=97 /></td>
-                                    <td>82</td>
-                                    <td>96</td>
-                                    <td>95</td>
-                                    <td>85</td>
-                                    <td>100</td>
-                                </tr>
-                                <tr align="center">
-                                    <td>Han Solo</td>
-                                    <td>93</td>
-                                    <td>92</td>
-                                    <td>94</td>
-                                    <td>90</td>
-                                    <td>92</td>
-                                    <td><input type="number" value=95 /></td>
-                                    <td>94</td>
-                                    <td>87</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </body>
+<body>
+        <div class="d-flex">
+                <div class="d-none d-md-block">
+                        <ul class="wd-kanbas-navigation">
+                                <li><a href="http://northeastern.edu">N</a></li>
+                                <li><a href="/Kanbas/Account/Navigation/index.html"><i
+                                                        class="fa fa-user"></i><br>Account</a></li>
+                                <li><a href="/Kanbas/Dashboard/screen.html"> <i class="fa fa-tachometer"></i>
+                                                Dashboard</a></li>
+                                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i
+                                                        class="fa fa-book"></i> Courses</a></li>
+                                <li><a href="/Kanbas/Calendar/index.html"> <i class="fa fa-calendar"></i>
+                                                Calendar</a></li>
+                                <li><a href="/Kanbas/Inbox/index.html"><i class="fa fa-inbox"></i> <br>
+                                                Inbox</a></li>
+                                <li><a href="/Kanbas/History/index.html"><i class="fa fa-history"></i>
+                                                <br> History</a></li>
+                                <li><a href="/Kanbas/Studio/index.html"><i class="fa fa-desktop"></i>
+                                                <br> Studio</a></li>
+                                <li><a href="/Kanbas/Help/index.html"><i class="fa fa-question-circle"></i><br>
+                                                Help</a>
+                                </li>
+                        </ul>
+                </div>
+                <div class="col-md-10">
+                        <div class="row">
+                                <div class="col-md-1">
+                                        <a href="/Kanbas/Navigation/index.html"><button class="red-icon"><i class="fa fa-ellipsis-v"></i></button></a> 
+                                </div>
+                                <div class="col-md-9">
+                                        <nav aria-label="breadcrumb">
+                                                <ol class="breadcrumb">
+                                                        <li class="breadcrumb-item">CS5610</li>
+                                                        <li class="breadcrumb-item">11744</li>
+                                                        <li class="breadcrumb-item">202310</li>
+                                                        <li class="breadcrumb-item active" aria-current="page">
+                                                                Grades</li>
+                                                </ol>
+                                        </nav>
+                                </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                                <div class="col-md-1">
+                                        <div class="d-none d-md-block">
+                                                <ul class="wd-navigation">
+                                                        <li>202310_Fall2023Semester</li>
+                                                        <li><a href="/Kanbas/Courses/Home/screen.html">
+                                                                        Home</a></li>
+                                                        <li><a href="#">
+                                                                        Modules</a></li>
+                                                        <li><a href="#">
+                                                                        Piazza</a></li>
+                                                        <li><a href="#">
+                                                                        Zoom
+                                                                        Meetings</a></li>
+                                                        <li><a href="/Kanbas/Courses/Assignments/screen.html">
+                                                                        Assignments</a></li>
+                                                        <li><a href="#">
+                                                                        Quizzes</a></li>
+                                                        <li class="wd-active"><a
+                                                                        href="/Kanbas/Courses/Grades/screen.html">
+                                                                        Grades</a></li>
+                                                        <li><a href="#">
+                                                                        People</a></li>
+                                                        <li><a href="#">
+                                                                        Panopto
+                                                                        Video</a></li>
+                                                        <li><a href="#">
+                                                                        Discussions</a></li>
+                                                        <li><a href="#">
+                                                                        Announcements</a></li>
+                                                        <li><a href="#">
+                                                                        Pages</a></li>
+                                                        <li><a href="#">
+                                                                        Files</a></li>
+                                                        <li><a href="#">
+                                                                        Rubrics</a></li>
+                                                        <li><a href="#">
+                                                                        Outcomes</a></li>
+                                                        <li><a href="#">
+                                                                        Collaborations</a></li>
+                                                        <li><a href="#">
+                                                                        Syllabus</a></li>
+                                                        <li><a href="/Kanbas/Courses/Settings/screen.html">
+                                                                        Settings</a></li>
+                                                </ul>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-9">
+                                        <div class="row float-end">
+                                                <div class="col-auto">
+                                                        <button class="btn"
+                                                                style="color: white; background-color: gray;"><i
+                                                                        class="fa fa-file"></i>
+                                                                Import</button>
+                                                </div>
+                                                <div class="col-auto">
+                                                        <button class="form-select"
+                                                                style="color: white; background-color: gray;"><i
+                                                                        class="fa fa-inbox"></i>
+                                                                Export</button>
+
+                                                </div>
+                                                <div class="col-auto">
+                                                        <button class="btn btn-success"
+                                                                style="color: white; background-color: gray;"><i
+                                                                        class="fa fa-gear"></i></button>
+                                                </div>
+                                        </div>
+                                        <div class="clearfix">
+                                        </div>
+                                        <div class="row mb-3">
+                                                <div class="col-md-6 input-icon">
+                                                        <label for="text-fields-name">Student Name:</label>
+                                                        <i class="fa fa-search icon"></i>
+                                                        <input class="form-select" id="text-fields-name"
+                                                                placeholder="Search Students">
+                                                </div>
+                                                <div class="col-md-6 input-icon">
+                                                        <label for="text-fields-assign-names">Assignment Names:</label>
+                                                        <i class="fa fa-search icon"></i>
+                                                        <input class="form-select" id="text-fields-assign-names"
+                                                                placeholder="Search Assignments">
+                                                </div>
+                                        </div>
+
+                                        <div class="row col-md-2">
+                                                <button class="btn btn-secondary"><i class="fa fa-filter"></i>
+                                                        Filters</button>
+                                        </div>
+                                        <div class="table-responsive">
+                                                <table class="table table-striped">
+                                                        <thead>
+                                                                <tr>
+                                                                        <th>Student Name</th>
+                                                                        <th>A1 SETUP<br>Out of 100</th>
+                                                                        <th>A2 HTML<br>Out of 100</th>
+                                                                        <th>A3 CSS<br>Out of 100</th>
+                                                                        <th>A4 BOOTSTRAP<br>Out of 100</th>
+                                                                        <th>A5 JAVASCRIPT<br>Out of 100</th>
+                                                                        <th>A6 REACT<br>Out of 100</th>
+                                                                        <th>A7 REDUX<br>Out of 100</th>
+                                                                        <th>A8 NODE<br>Out of 100</th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr align="center">
+                                                                        <td class="student-name">Alice Wonderland</td>
+                                                                        <td>98</td>
+                                                                        <td class="input-container"><input type="number" value=89 /><button class="input-button"><i class="fa fa-ellipsis-v"></i></button></td>
+                                                                        <td>87</td>
+                                                                        <td>90</td>
+                                                                        <td>89</td>
+                                                                        <td>94</td>
+                                                                        <td>88</td>
+                                                                        <td class="input-container"><input type="number" value=100 /><button class="input-button"><i class="fa fa-ellipsis-v"></i></button></td>
+                                                                </tr>
+                                                                <tr align="center">
+                                                                        <td class="student-name">Princess Leia</td>
+                                                                        <td>98</td>
+                                                                        <td>80</td>
+                                                                        <td>87</td>
+                                                                        <td class="input-container"><input type="number" value=82 /><button class="input-button"><i class="fa fa-ellipsis-v"></i></button></td>
+                                                                        <td>100</td>
+                                                                        <td>94</td>
+                                                                        <td>85</td>
+                                                                        <td class="input-container"><input type="number" value=84 /><button class="input-button"><i class="fa fa-ellipsis-v"></i></button></td>
+                                                                </tr>
+                                                                <tr align="center">
+                                                                        <td class="student-name">Luke Skywalker</td>
+                                                                        <td>99</td>
+                                                                        <td>98</td>
+                                                                        <td class="input-container"><input type="number" value=97 /><button class="input-button"><i class="fa fa-ellipsis-v"></i></button></td>
+                                                                        <td>82</td>
+                                                                        <td>96</td>
+                                                                        <td>95</td>
+                                                                        <td>85</td>
+                                                                        <td>100</td>
+                                                                </tr>
+                                                                <tr align="center">
+                                                                        <td class="student-name">Han Solo</td>
+                                                                        <td>93</td>
+                                                                        <td>92</td>
+                                                                        <td>94</td>
+                                                                        <td>90</td>
+                                                                        <td>92</td>
+                                                                        <td class="input-container"><input type="number" value=95 /><button class="input-button"><i class="fa fa-ellipsis-v"></i></button></td>
+                                                                        <td>94</td>
+                                                                        <td>87</td>
+                                                                </tr>
+                                                        </tbody>
+                                                </table>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+</body>
+
 </html>

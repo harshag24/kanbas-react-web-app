@@ -1,0 +1,47 @@
+.assign-form{
+    border: 1px solid #ccc;
+}
+
+.form-group{
+    margin-bottom: 1%;
+}
+
+
+.published-text{
+    color: green;
+}
+
+.btn-success{
+    background-color: red;
+    color: white;
+}
+.red-icon {
+    border: none;
+    color: red;
+  }
+  
+.breadcrumb-item {
+    color: red !important; 
+}
+.breadcrumb-item.active {
+    color: black !important;
+}
+
+.breadcrumb-item::before {
+    content: " " !important;
+}
+.breadcrumb-item::after {
+    content: " > " !important;
+}
+.breadcrumb-item.active::after {
+    content: " " !important;
+}
+.no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  .no-margin {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
