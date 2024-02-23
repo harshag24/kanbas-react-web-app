@@ -1,0 +1,53 @@
+.btn{
+    margin-right: 1%;
+    width:auto;
+    background-color: rgb(194, 194, 194);
+    margin-top: 1%;
+}
+
+.btn:hover{
+    background-color: rgb(194, 194, 194);
+}
+
+.search-fields-row{
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px;
+  }
+
+  .form-control{
+    width: 90%;
+    align-items: center;
+  }
+.search-fields-row{
+    margin-top: 1%;
+}
+.form-label{
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+.grades-table-responsive{
+    margin-top: 1%;
+}
+.table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .table th {
+    border: 2px solid rgb(236, 235, 235);
+    text-align: left;
+    padding: 8px;
+    background-color: rgb(194, 194, 194);
+  }
+  
+  .table td {
+    border: 2px solid rgb(236, 235, 235);
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .table tbody tr:nth-child(even) td {
+    background-color: rgb(194, 194, 194);
+  }
+  

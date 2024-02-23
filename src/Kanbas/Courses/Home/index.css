@@ -1,0 +1,43 @@
+.unpublished {
+    background-color: gray;
+    margin: 4px;
+}
+
+.published {
+    background-color: rgb(97, 196, 97);
+    color: white;
+    margin: 4px;
+}
+
+.course-status-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 10px;
+}
+
+.course-status-section ul li button {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    border: 1px black solid;
+    border-radius: 2px;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.row{
+    margin: 0%;
+}
+.course-status-section button {
+    border: none;
+}
+
+.to-do ul li, .to-do ul li a{
+    color: red;
+}
+
+.status-buttons ul li button{
+    display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

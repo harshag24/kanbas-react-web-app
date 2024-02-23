@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
-
 </head>
 
 <body>
@@ -33,9 +32,9 @@
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-1">
-                   <a href="/Kanbas/Navigation/index.html"><button class="red-icon"><i class="fa fa-ellipsis-v"></i></button></a> 
+                    <a href="#" data-bs-toggle="collapse" data-bs-target="#hideNav"><i class="fa fa-ellipsis-v"></i></a>
                 </div>
-                <div class="col-md-11">
+                <div class="col-md-10">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">CS5610</li>
@@ -46,6 +45,47 @@
                         </ol>
                     </nav>
                 </div>
+                <div class="col-md-1">
+                    <a href="#" data-bs-toggle="collapse" data-bs-target="#hideCourseNav"><i
+                            class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+            <div class="row left collapse" id="hideNav">
+                <ul>
+                    <li><a href="http://northeastern.edu">N</a></li>
+                    <li><a href="/Kanbas/Account/Navigation/index.html"><i class="fa fa-user"></i> <br>Account</a></li>
+                    <li><a href="/Kanbas/Dashboard/screen.html"> <i class="fa fa-tachometer"></i> Dashboard</a></li>
+                    <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>
+                            Courses</a></li>
+                    <li><a href="/Kanbas/Calendar/index.html"> <i class="fa fa-calendar"></i> Calendar</a></li>
+                    <li><a href="/Kanbas/Inbox/index.html"><i class="fa fa-inbox"></i> <br> Inbox</a></li>
+                    <li><a href="/Kanbas/History/index.html"><i class="fa fa-history"></i> <br> History</a></li>
+                    <li><a href="/Kanbas/Studio/index.html"><i class="fa fa-desktop"></i> <br> Studio</a></li>
+                    <li><a href="/Kanbas/Help/index.html"><i class="fa fa-question-circle"></i><br> Help</a></li>
+                </ul>
+            </div>
+            <div class="row left collapse" id="hideCourseNav">
+                <ul>
+                    <li>202310_Fall2023Semester</li>
+                    <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                    <li><a href="#">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+                </ul>
             </div>
             <hr>
             <div class="row">
@@ -86,8 +126,6 @@
                                 </select>
                                 <button style=" background-color: red; 
                         color: white; border: 1px black solid;"><i class="fa fa-plus"></i> Module</button>
-                            <a href="/Kanbas/Courses/Navigation/index.html"><button><i class="fa fa-chevron-right"></i></button></a> 
-
                             </div>
                             <li class="list-group-item">
                                 <div>
@@ -325,6 +363,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
